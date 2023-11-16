@@ -31,8 +31,10 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: check ls
       run: ls -l
+    - name: go to DIR
+      run: cd src\main\java\com\example
     - name: test hello world
-      run: java Main
+      run: java Main.java
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
