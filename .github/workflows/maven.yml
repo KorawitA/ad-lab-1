@@ -31,8 +31,6 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: check ls
       run: ls -l
-    - name: go to DIR
-      run: cd src\main\java\com\example
     - name: test hello world
       run: java Main.java
 
